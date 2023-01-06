@@ -1,16 +1,20 @@
 <template>
   <div class="text-center hero min-h-screen">
-    <div class="hero-content flex-col lg:flex-row">
-      <img src="../assets/25V2.svg" class="mx-auto items-center light:invert w-72" @click="confetti"/>
-      <div class="mockup-code text-left">
-        <pre data-prefix="1"><code>let mybirthday: BirthdayDto = {};</code></pre>
-        <pre data-prefix="2"><code>mybirthday = {</code></pre>
-        <pre data-prefix="3" class="text-success"><code>  "message": "{{ message['message'] }}",</code></pre>
-        <pre data-prefix="4" class="text-success"><code>  "additional": "{{ message['additional'] }}"</code></pre>
-        <pre data-prefix="5" class="text-success"><code>  "age": {{ message['age'] }}</code></pre>
-        <pre data-prefix="6" class="text-success"><code>  "born_in": "{{ message['born_in'] }}"</code></pre>
-        <pre data-prefix="7"><code>};</code></pre>
-        <pre data-prefix="8"><code>console.log(mybirthday);</code></pre>
+    <div class="hero-content">
+      <div class="container">
+        <div class="flex flex-col md:flex-row m-3">
+          <img src="../assets/25V2.svg" class="max-w-screen items-center light:invert lg:w-72" @click="confetti"/>
+          <div class="mockup-code text-left p-3">
+            <pre data-prefix="1"><code>let mybirthday: BirthdayDto = {};</code></pre>
+            <pre data-prefix="2"><code>mybirthday = {</code></pre>
+            <pre data-prefix="3" class="text-success"><code>  "message": "{{ message['message'] }}",</code></pre>
+            <pre data-prefix="4" class="text-success"><code>  "additional": "{{ message['additional'] }}"</code></pre>
+            <pre data-prefix="5" class="text-success"><code>  "age": {{ message['age'] }}</code></pre>
+            <pre data-prefix="6" class="text-success"><code>  "born_in": "{{ message['born_in'] }}"</code></pre>
+            <pre data-prefix="7"><code>};</code></pre>
+            <pre data-prefix="8"><code>console.log(mybirthday);</code></pre>
+          </div>
+        </div>
       </div>
     </div>
   </div>
